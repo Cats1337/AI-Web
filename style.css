@@ -1,0 +1,293 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Dark Mode Switch */
+.light {
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    transform: rotate(90deg);
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+.light:before, .light:after {
+    content: "";
+    display: block;
+}
+  
+.light:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+}
+  
+.light:after {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+}
+  /* Checked */
+.light:checked {
+    background-color: rgba(0,0,0,0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+}
+  
+.light:checked:before {
+    background-color: currentColor;
+    box-shadow: #b8a537 0 0 10px;
+    transition: box-shadow 0.5s ease-out;
+}
+  
+.light:checked:after {
+    border-left-color: currentColor;
+}
+
+.light:hover{
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark{
+    background-color: #282828;
+    color: #e6e6e6;
+}
+
+/*  */
+
+.buttonHolder{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* [] [] []
+        [] [] */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px; 
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 5; }
+.div3 { grid-area: 1 / 5 / 2 / 7; }
+.div4 { grid-area: 2 / 2 / 3 / 4; }
+.div5 { grid-area: 2 / 4 / 3 / 6; } 
+
+section {
+  max-width: var(700px);
+  margin: 40px auto;
+  width: 97%;
+  color: #fff;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Space Mono", monospace;
+  font-size: 22px;
+  transition: .3s;
+  border-bottom: 2px solid;
+  user-select: none;
+}
+
+details > div {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 100%;
+  user-select: none;
+  padding: 0 20px;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+}
+
+
+details > div > p {
+  flex: 1;
+}
+
+details[open] > summary {
+   color: red;
+}
+
+.explain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px 10vw;
+}
+
+.title{
+    grid-column: 1 / span 3;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.desc{
+    grid-column: span 1;
+    text-align: center;
+}
+
+.descTitle:hover{
+    color: orange;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.descButton{
+    background-color: rgba(35, 35, 35, 0.2);
+    border-radius: 5%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn{
+    height: auto;
+    text-align: center;
+    margin: 0 5px;
+    text-transform: uppercase;
+    align-content: center;
+    --bg: #121212;
+    --hover-bg: #90edff;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    overflow: none;
+}
+
+/*  */
+
+details {
+    max-width: 500px;
+    overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+div.content {
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+    transition: max-height .5s ease-out;
+}
+
+  details[open] + div.content {
+    max-height: 800px; /* Set a max-height value enough to show all the content */
+    transition: max-height .5s ease-out;
+  }
+
+/*  */
+
+
+@media (min-width: 768px) {
+  details > div {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
+
+  details[open] > div {
+    opacity: 1;
+  }
+
+  details > div > p {
+    opacity: 0;
+    animation: showContent 0.6s forwards 0.2s;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  details > div > img {
+    opacity: 0;
+    animation: showImage 0.3s forwards 0.15s;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@keyframes showImage {
+  from {
+    opacity: 0;
+    clip-path: inset(50% 0 50% 0);
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
