@@ -133,18 +133,47 @@ A ‘ask a question’ box -->
     <div class="buttonHolder" id="start">
         <a class="btn div1" href="#sec1">What AI Actually Is</a>
         <a class="btn div2" href="#sec2">How AI Works</a>
-        <a class="btn div3" href="#sec3">How AI Detectors Don’t ‘Work’</a>
+        <a class="btn div3" href="#sec3">How AI Detectors <s>Work</s></a>
         <a class="btn div4" href="#sec4">Effects of Using AI</a>
         <a class="btn div5" href="#sec4">Effects of Using AI Detectors</a>
     </div>
     
+    <!-- details -> Test -->
+     
+    <details class="flavorPreTitle" open>
+        <summary class="flavorTitle">Choose a path based on your discipline</summary>
+        <div class="flavorHolder">
+            <!-- generic checked by default -->
+            <button class="flavor" id="gen" value="gen">
+                General
+            </button>
+            <button class="flavor" id="lit" value="lit">
+                Literature
+            </button>
+            <button class="flavor" id="math" value="math">
+                Mathematics
+            </button>
+            <button class="flavor" id="sci" value="sci">
+                Science
+            </button>
+            <button class="flavor" id="biz" value="biz">
+                Business
+            </button>
+            <button class="flavor" id="art" value="art">
+                Art
+            </button>
+            <button class="flavor" id="cs" value="cs">
+                Computer Science
+            </button>
+        </div>
+    </details>
     
     
 
     <div class="explain" id="sec1">
         <h2 class="title">What AI Actually Is</h2>
         <div class="desc">
-            <details>
+            <details class="descPreTitle">
                 <summary class="descTitle">
                     <span>
                         Explanation
@@ -161,7 +190,7 @@ A ‘ask a question’ box -->
         </div>
 
         <div class="desc">
-            <details>
+            <details class="descPreTitle">
                 <summary class="descTitle">Comparison</summary>
             </details>
             <div class="content">
@@ -172,7 +201,7 @@ A ‘ask a question’ box -->
             </div>
         <div class="desc">
             
-            <details>
+            <details class="descPreTitle">
                 <summary class="descTitle">Analogy</summary>
             </details>
                 <div class="content">
@@ -180,6 +209,142 @@ A ‘ask a question’ box -->
                         Imagine AI’s “brain” as something like the Library of Alexandria—massive and diverse, yet users don’t fully know its contents. It's always evolving and updating through new data and connections.
                     </p>
                 </div>
+        </div>
+    </div>
+
+    <div class="explain" id="sec2">
+        <h2 class="title">How AI Works</h2>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Input → Process → Output</summary>
+            </details>
+            <div class="content">
+                <p>
+                    Just as our minds convert sensory input into thoughts, AI processes data, patterns, and connections to generate an output.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Human-like Learning</summary>
+            </details>
+            <div class="content">
+                <p>
+                    AI’s “thinking” process resembles our own, but with its own form of trial and error via methods like reinforcement learning. However, it’s fundamentally different because it lacks self-awareness or understanding.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Learning and Biases</summary>
+            </details>
+            <div class="content">
+                <p>
+                    We use techniques like reinforcement learning to help AI adjust. It responds based on positive or negative feedback—similar to how we reinforce our own habits and beliefs. Over time, this feedback-driven process allows AI to fine-tune its behavior to reach desired outcomes, though it can also introduce biases if the feedback or data contains unbalanced perspectives.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="explain" id="sec3">
+        <h2 class="title">How AI Detectors <s>Work</s></h2>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Inside Mechanics</summary>
+            </details>
+            <div class="content">
+                <p>
+                    AI detectors compare outputs to known or indexed data to assess likelihood of “human” or “AI” origin.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Limitations and Flaws</summary>
+            </details>
+            <div class="content">
+                <p>
+                    Detectors often struggle with rephrased or commonly stated concepts, frequently flagging responses as AI-generated if they match widely recognized phrases or templates.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Confirmation Bias</summary>
+            </details>
+            <div class="content">
+                <p>
+                    If you’re already uncertain and turn to a detection tool, you've likely unknowingly brought a bias that the content is AI-generated.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="explain" id="sec4">
+        <h2 class="title">Effects of Using AI</h2>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Creative Tools vs Workforce Fears</summary>
+            </details>
+            <div class="content">
+                <p>
+                    For many, AI tools are productivity boosters, sparking creativity and offering support rather than replacing jobs. AI functions as an assistant, not a substitute, especially since it lacks the critical thinking and nuanced judgment unique to humans.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Professional Applications</summary>
+            </details>
+            <div class="content">
+                <p>
+                    AI isn’t just a shortcut or a “cheat”—in real-world settings, it’s a powerful aid in tasks like analysis, coding, communication, and data processing, enhancing human abilities rather than undermining them.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Misconceptions of AI</summary>
+            </details>
+            <div class="content">
+                <p>
+                    A widespread misconception is that AI is equivalent to AGI (Artificial General Intelligence) or ASI (Artificial Superintelligence). While AGI would theoretically match human-level reasoning across various tasks and ASI would surpass it and us, current AI remains narrow and specialized.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="explain" id="sec5">
+        <h2 class="title">Effects of Using AI Detectors</h2>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Accuracy Concerns</summary>
+            </details>
+            <div class="content">
+                <p>
+                    Detectors can mistakenly flag individuals as using AI-generated content, stifling creativity and undermining legitimate efforts.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Wrongful Assumptions</summary>
+            </details>
+            <div class="content">
+                <p>
+                    Misapplications of detection tools often result in false positives, impacting students, professionals, and creatives who responsibly incorporate AI into their work.
+                </p>
+            </div>
+        </div>
+        <div class="desc">
+            <details class="descPreTitle">
+                <summary class="descTitle">Ethical Implications</summary>
+            </details>
+            <div class="content">
+                <p>
+                    Do AI detectors limit innovation, enforce gatekeeping, or create unnecessary barriers? Explore how these questions shape our views on intellectual honesty and creative freedom.
+                </p>
+            </div>
         </div>
     </div>
 

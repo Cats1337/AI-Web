@@ -13,5 +13,3 @@ function darkMode() {
     element.style.transition = "color 0.5s ease";
 }
 
-
-  

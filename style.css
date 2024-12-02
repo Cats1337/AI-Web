@@ -110,7 +110,7 @@ section {
   color: #fff;
 }
 
-summary {
+.descTitle {
   display: block;
   cursor: pointer;
   padding: 10px;
@@ -121,7 +121,7 @@ summary {
   user-select: none;
 }
 
-details > div {
+.descPreTitle > div {
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
@@ -133,11 +133,11 @@ details > div {
 }
 
 
-details > div > p {
+.descPreTitle > div > p {
   flex: 1;
 }
 
-details[open] > summary {
+.descPreTitle[open] > summary {
    color: red;
 }
 
@@ -155,11 +155,18 @@ details[open] > summary {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    text-decoration: underline;
 }
 
 .desc{
     grid-column: span 1;
     text-align: center;
+}
+
+.descTitle{
+    font-size: 1.2em;
+    transition: 0.3s;
+    display: block;
 }
 
 .descTitle:hover{
@@ -213,6 +220,68 @@ a {
 
 /*  */
 
+
+.flavorHolder {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #0D1117;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.flavor {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.flavor:not(:active):hover,
+.flavor:focus {
+  background-color: #21262C;
+  transition: 300ms;
+  transform: scale(0.95,0.95);
+}
+
+.flavor:focus,
+.flavor:active {
+  background-color: #1A1F24;
+  outline: none;
+}
+
+.flavor::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2F81F7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.flavor:focus::before,
+.flavor:active::before {
+  opacity: 1;
+}
+
+.flavor svg {
+  width: 15px
+}
+
+.flavor:hover > :not(.flavor:hover) {
+  transition: 300ms;
+}
+
+
 details {
     max-width: 500px;
     overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
@@ -235,7 +304,7 @@ div.content {
 }
 
   details[open] + div.content {
-    max-height: 800px; /* Set a max-height value enough to show all the content */
+    max-height: 800px; /* Set a max-height flavor enough to show all the content */
     transition: max-height .5s ease-out;
   }
 
