@@ -1,16 +1,16 @@
 window.onload = function () {
     const checkbox = document.getElementById("light");
     if (checkbox.checked) {
-        darkMode();
+        darkntMode();
     }
-    // check if browser is in dark mode
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        darkMode();
+    // check if browser is in light mode
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        darkntMode();
     }
 
 };
 
-function darkMode() {
+function darkntMode() {
     let element = document.body;
     element.classList.toggle("darknt");
     // transition: background-color 0.5s ease;
