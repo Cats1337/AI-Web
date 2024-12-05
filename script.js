@@ -232,3 +232,63 @@ f: {
 	}
 }}
 window.onload = form.f.init.register
+
+
+// <!-- Content to be generated(pulled) dynamically based on Category and Desc -->
+// File to pull from:
+// /data.json
+// {
+//     "content": [ 
+//       {
+//         "sectionID": "sec1",
+//         "category": "What AI Actually Is",
+//         "descriptions": [
+//           {
+//             "descID": "c1t1",
+//             "desc_title": "Explanation 1",
+//             "desc_words": [
+//               "Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data."
+//             ]
+//           },
+//           {
+//             "descID": "c1t2",
+//             "desc_title": "Explanation 2",
+//             "desc_words": [
+//               "lorem ipsum"
+//             ]
+//           },
+//           {
+//             "descID": "c1t3",
+//             "desc_title": "Explanation 3",
+//             "desc_words": [
+//               "lorem ipsum"
+//             ]
+//           }
+//         ]
+//       }
+
+function loadContent() {
+	fetch('data.json')
+		.then(response => response.json())
+		.then(data => {
+			let output = '<h2>Content</h2>';
+			data.content.forEach(function (content) {
+				output += `
+				<div class="card">
+					<h3>${content.category}</h3>
+					<ul>
+					${content.descriptions.map(function (desc) {
+						return `
+							<li>
+								<h4>${desc.desc_title}</h4>
+								<p>${desc.desc_words}</p>
+							</li>
+						`;
+					}).join('')}
+					</ul>
+				</div>
+				`;
+			});
+			document.getElementById('content').innerHTML = output;
+		});
+}

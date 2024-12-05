@@ -68,3 +68,30 @@ Rewrite '[content]' for someone who is in the [discipline] field and has (a(n)) 
 
 ex.
 Rewrite 'Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data.' for someone who is in the Computer Science field and has (a(n)) Novice level of knowledge in Artificial Intelligence. This is in the What AI Actually Is under the Explanation category.
+
+discipline: [General, Art, Science, Business, Literature, Mathematics, Computer Science]
+knowledge: [None, Novice, Intermediate, Advanced, Expert]
+category: [What AI Actually Is, How AI Works, AI in the Real World] (changes based on the category)
+section: [Explanation, How AI Works, AI in the Real World, AI in the Future, AI in Society]
+text: [content] (changes based on the section)
+
+
+discipline: General
+knowledge: None
+category: What AI Actually Is
+section: Explanation
+text: 1 Ai is a thing
+
+discipline: General
+knowledge: Novice
+category: What AI Actually Is
+section: Explanation
+text: 2 Ai is code
+
+discipline: General
+knowledge: Intermediate
+category: What AI Actually Is
+section: Explanation
+text: 3 Ai learns
+
+etc...

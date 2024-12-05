@@ -130,12 +130,13 @@ A ‘ask a question’ box -->
 
 <body class="dark">
     <h1 class="mainTitle">Understanding <br> Artificial Intelligence</h1>
+    thingy here explaning "pick what you teach" and "pick your knowledge level on AI"
 
-    <input type="checkbox" class="light" id="light" onclick="darkMode()">
+    <input type="checkbox" class="light" id="light" onclick="darkMode()" onKeyPress="">
 
     <div class="dropdownHolder">
         <label id="img_category_label" class="field" for="img_category" data-value="">
-            <span>Discipline</span>
+            <span>What do you teach?</span>
             <div id="img_category" class="psuedo_select" name="img_category">
                 <span class="selected"></span>
                 <ul id="img_category_options" class="options">
@@ -151,7 +152,7 @@ A ‘ask a question’ box -->
         </label>
     
         <label id="img_category_label" class="field" for="img_category" data-value="">
-            <span>Knowledge</span>
+            <span>Knowledge level</span>
             <div id="img_category" class="psuedo_select" name="img_category">
                 <span class="selected"></span>
                 <ul id="img_category_options" class="options">
@@ -167,28 +168,30 @@ A ‘ask a question’ box -->
     
     <!-- Buttons -->
     <!-- {A} {B} {C} {D} {E} -->
+     make these tabs vvv
     <div class="buttonHolder" id="start">
         <a class="btn div1" href="#sec1">What AI Actually Is</a>
         <a class="btn div2" href="#sec2">How AI Works</a>
         <a class="btn div3" href="#sec3">How AI Detectors <s>Work</s></a>
         <a class="btn div4" href="#sec4">Effects of Using AI</a>
-        <a class="btn div5" href="#sec4">Effects of Using AI Detectors</a>
+        <a class="btn div5" href="#sec4">AI Detector Issues</a>
     </div>
 
     <div class="explain" id="sec1">
-        <h2 class="category">What AI Actually Is</h2>
+        <h2 class="category" id="c1">What AI Actually Is</h2>
         <div class="desc">
             <details class="descPreTitle">
-                <summary class="descTitle">
+                <summary class="descTitle" id="c1t1">
                     <span>
                         Explanation
                     </span>
-                    <!-- <a class="btn">
-                    </a> -->
                 </summary>
             </details>
-            <div class="content">
+            <div class="content" id="c1t1w1">
                 <p>
+
+                    <!-- Content to be generated/pulled dynamically based on Category and Desc -->
+
                     Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data.
                 </p>
             </div>
@@ -348,7 +351,7 @@ A ‘ask a question’ box -->
     </div>
 
     <div class="explain" id="sec5">
-        <h2 class="category">Effects of Using AI Detectors</h2>
+        <h2 class="category">AI Detector Issues</h2>
         <div class="desc">
             <details class="descPreTitle">
                 <summary class="descTitle">Accuracy Concerns</summary>
