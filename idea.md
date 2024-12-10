@@ -95,3 +95,24 @@ section: Explanation
 text: 3 Ai learns
 
 etc...
+
+
+discipline_id, discipline 
+knowledge_id, knowledge
+category_id, category
+section_id, section
+text_id, text
+
+1, General
+1, None
+1, What AI Actually Is
+1, Explanation
+1, Lorem impsum dolor sit amet
+
+2, Art
+1, None
+1, What AI Actually Is
+1, Explanation
+2, Lorem impsum dolor sit amet
+
+

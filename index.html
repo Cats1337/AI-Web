@@ -84,7 +84,7 @@ Path Selection:
 
 
 Central Understanding: [A] Understanding AI Detectors
-Content: Interactive visual presentations explaining the mechanics and limitations of AI detectors, including examples of texts flagged as AI-generated.
+Content: Interactive visual presentations explainering the mechanics and limitations of AI detectors, including examples of texts flagged as AI-generated.
 Follow-Up Paths:
 [4] Explore practical applications of AI detectors across different fields.
 [5] Visual discussions on societal impacts stemming from AI detection tools.
@@ -120,7 +120,6 @@ A ‘ask a question’ box -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/futura-renner" type="text/css"/>
 
     <!-- js -->
-    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/bbcfa445c6.js" crossorigin="anonymous"></script>
     
@@ -130,264 +129,49 @@ A ‘ask a question’ box -->
 
 <body class="dark">
     <h1 class="mainTitle">Understanding <br> Artificial Intelligence</h1>
-    thingy here explaning "pick what you teach" and "pick your knowledge level on AI"
+    <p class="subTitle">
+        Choose what you teach and your knowledge level on AI
+    </p>
 
     <input type="checkbox" class="light" id="light" onclick="darkntMode()" onKeyPress="">
 
     <div class="dropdownHolder">
-        <label id="img_category_label" class="field" for="img_category" data-value="">
+        <label id="discipline_label" class="field" for="img_category_discipline" data-value="">
             <span>What do you teach?</span>
-            <div id="img_category" class="psuedo_select" name="img_category">
+            <div id="img_category_discipline" class="psuedo_select" name="img_category">
                 <span class="selected"></span>
-                <ul id="img_category_options" class="options">
-                    <li class="option" data-value="gen">General</li>
-                    <li class="option" data-value="art">Art</li>
-                    <li class="option" data-value="sci">Science</li>
-                    <li class="option" data-value="biz">Business</li>
-                    <li class="option" data-value="lit">Literature</li>
-                    <li class="option" data-value="math">Mathematics</li>
-                    <li class="option" data-value="cs">Computer Science</li>
+                <ul id="img_category_options_discipline" class="options">
+                    <li class="option" data-value="General">General</li>
+                    <li class="option" data-value="Art">Art</li>
+                    <li class="option" data-value="Science">Science</li>
+                    <li class="option" data-value="Business">Business</li>
+                    <li class="option" data-value="Literature">Literature</li>
+                    <li class="option" data-value="Mathematics">Mathematics</li>
+                    <li class="option" data-value="Computer Science">Computer Science</li>
                 </ul>
             </div>
         </label>
     
-        <label id="img_category_label" class="field" for="img_category" data-value="">
+        <label id="knowledge_label" class="field" for="img_category_knowledge" data-value="">
             <span>Knowledge level</span>
-            <div id="img_category" class="psuedo_select" name="img_category">
+            <div id="img_category_knowledge" class="psuedo_select" name="img_category">
                 <span class="selected"></span>
-                <ul id="img_category_options" class="options">
-                    <li class="option" data-value="none">None</li>
-                    <li class="option" data-value="novice">Novice</li>
-                    <li class="option" data-value="interm">Intermediate</li>
-                    <li class="option" data-value="adv">Advanced</li>
-                    <li class="option" data-value="expert">Expert</li>
+                <ul id="img_category_options_knowledge" class="options">
+                    <li class="option" data-value="None">None</li>
+                    <li class="option" data-value="Novice">Novice</li>
+                    <li class="option" data-value="Intermediate">Intermediate</li>
+                    <li class="option" data-value="Advanced">Advanced</li>
+                    <li class="option" data-value="Expert">Expert</li>
                 </ul>
             </div>
         </label>
     </div>
-    
-    <!-- Buttons -->
-    <!-- {A} {B} {C} {D} {E} -->
-     make these tabs vvv
-    <div class="buttonHolder" id="start">
-        <a class="btn div1" href="#sec1">What AI Actually Is</a>
-        <a class="btn div2" href="#sec2">How AI Works</a>
-        <a class="btn div3" href="#sec3">How AI Detectors <s>Work</s></a>
-        <a class="btn div4" href="#sec4">Effects of Using AI</a>
-        <a class="btn div5" href="#sec4">AI Detector Issues</a>
+
+    <div class="wrapper" id="content-container">
     </div>
 
-    <div class="explain" id="sec1">
-        <h2 class="category" id="c1">What AI Actually Is</h2>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle" id="c1t1">
-                    <span>
-                        Explanation
-                    </span>
-                </summary>
-            </details>
-            <div class="content" id="c1t1w1">
-                <p>
-
-                    <!-- Content to be generated/pulled dynamically based on Category and Desc -->
-
-                    Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data.
-                </p>
-            </div>
-        </div>
-
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Comparison</summary>
-            </details>
-            <div class="content">
-                <p>
-                    AI is like a child. It learns quickly, but we’re not entirely sure how it’s learning; its creativity
-                    seemingly knows no bounds, but it’s often wrong with the simplest or most obvious things. You can
-                    never know what someone, or something, else is truly thinking; we know animals think, but we don’t
-                    know what.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-
-            <details class="descPreTitle">
-                <summary class="descTitle">Analogy</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Imagine AI’s “brain” as something like the Library of Alexandria—massive and diverse, yet users
-                    don’t fully know its contents. It's always evolving and updating through new data and connections.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="explain" id="sec2">
-        <h2 class="category">How AI Works</h2>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Input → Output</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Just as our minds convert sensory input into thoughts, AI processes data, patterns, and connections
-                    to generate an output.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Human-like Learning</summary>
-            </details>
-            <div class="content">
-                <p>
-                    AI’s “thinking” process resembles our own, but with its own form of trial and error via methods like
-                    reinforcement learning. However, it’s fundamentally different because it lacks self-awareness or
-                    understanding.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Learning and Biases</summary>
-            </details>
-            <div class="content">
-                <p>
-                    We use techniques like reinforcement learning to help AI adjust. It responds based on positive or
-                    negative feedback—similar to how we reinforce our own habits and beliefs. Over time, this
-                    feedback-driven process allows AI to fine-tune its behavior to reach desired outcomes, though it can
-                    also introduce biases if the feedback or data contains unbalanced perspectives.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="explain" id="sec3">
-        <h2 class="category">How AI Detectors <s>Work</s></h2>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Inside Mechanics</summary>
-            </details>
-            <div class="content">
-                <p>
-                    AI detectors compare outputs to known or indexed data to assess likelihood of “human” or “AI”
-                    origin.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Limitations and Flaws</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Detectors often struggle with rephrased or commonly stated concepts, frequently flagging responses
-                    as AI-generated if they match widely recognized phrases or templates.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Confirmation Bias</summary>
-            </details>
-            <div class="content">
-                <p>
-                    If you’re already uncertain and turn to a detection tool, you've likely unknowingly brought a bias
-                    that the content is AI-generated.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="explain" id="sec4">
-        <h2 class="category">Effects of Using AI</h2>
-        <div class="desc">
-            <details class="descPreTitle">
-                <!-- Replacement crossed out with 'Assistant' plastered above it -->
-                <summary class="descTitle">
-                    <div class="scrib">
-                        <svg class="scribble" xmlns="http://www.w3.org/2000/svg" width="250"  viewBox="350 380 233 55">
-                            <path d="M 331.24 424.39 Q 331.24 424.39 331.49 424.39 Q 331.74 424.39 334.5 422.63 Q 337.27 420.88 344.8 417.37 Q 352.34 413.86 362.89 409.34 Q 373.44 404.83 387 399.31 Q 400.57 393.8 411.87 389.53 Q 423.18 385.27 429.21 383.77 Q 435.23 382.26 435.74 382.26 Q 436.24 382.26 433.73 384.02 Q 431.22 385.77 425.69 390.29 Q 420.16 394.8 413.88 400.57 Q 407.6 406.34 403.33 411.6 Q 399.06 416.87 397.81 419.88 Q 396.55 422.89 396.8 423.89 Q 397.05 424.89 399.06 424.89 Q 401.07 424.89 406.35 422.89 Q 411.62 420.88 419.16 417.87 Q 426.69 414.86 434.98 411.85 Q 443.27 408.84 451.81 406.34 Q 460.35 403.83 468.39 402.57 Q 476.43 401.32 479.19 401.32 Q 481.96 401.32 481.71 402.82 Q 481.45 404.33 476.93 408.34 Q 472.41 412.35 466.38 416.87 Q 460.35 421.38 455.83 425.14 Q 451.31 428.9 450.06 430.41 Q 448.8 431.91 449.05 431.91 Q 449.3 431.91 452.32 431.16 Q 455.33 430.41 462.62 427.65 Q 469.9 424.89 478.44 421.63 Q 486.98 418.37 495.27 415.86 Q 503.56 413.36 509.59 411.85 Q 515.62 410.35 516.37 410.35 Q 517.13 410.35 516.37 411.1 Q 515.62 411.85 512.35 414.86 Q 509.09 417.87 506.57 420.63 Q 504.06 423.39 504.06 423.89 Q 504.06 424.39 506.57 424.64 Q 509.09 424.89 516.87 422.38 Q 524.66 419.88 535.21 416.37 Q 545.76 412.86 556.56 408.59 Q 567.37 404.33 574.9 401.07 L 582.44 397.81" stroke="#dd0000" stroke-width="3" fill="none" stroke-dasharray="2000" stroke-dashoffset="2000" class="scribble"></path>
-                          </svg>
-                    </div>
-                    <span style="position: absolute">Replacing You</span>
-                    <span class="assist">Assisting</span>
-                </summary>
-            </details>
-            <div class="content">
-                <p>
-                    For many, AI tools are productivity boosters, sparking creativity and offering support rather than
-                    replacing jobs. AI functions as an assistant, not a substitute, especially since it lacks the
-                    critical thinking and nuanced judgment unique to humans.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Applications</summary>
-            </details>
-            <div class="content">
-                <p>
-                    AI isn’t just a shortcut or a “cheat”—in real-world settings, it’s a powerful aid in tasks like
-                    analysis, coding, communication, and data processing, enhancing human abilities rather than
-                    undermining them.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Misconceptions</summary>
-            </details>
-            <div class="content">
-                <p>
-                    A widespread misconception is that AI is equivalent to AGI (Artificial General Intelligence) or ASI
-                    (Artificial Superintelligence). While AGI would theoretically match human-level reasoning across
-                    various tasks and ASI would surpass it and us, current AI remains narrow and specialized.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="explain" id="sec5">
-        <h2 class="category">AI Detector Issues</h2>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Accuracy Concerns</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Detectors can mistakenly flag individuals as using AI-generated content, stifling creativity and
-                    undermining legitimate efforts.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Wrongful Assumptions</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Misapplications of detection tools often result in false positives, impacting students,
-                    professionals, and creatives who responsibly incorporate AI into their work.
-                </p>
-            </div>
-        </div>
-        <div class="desc">
-            <details class="descPreTitle">
-                <summary class="descTitle">Ethical Implications</summary>
-            </details>
-            <div class="content">
-                <p>
-                    Do AI detectors limit innovation, enforce gatekeeping, or create unnecessary barriers? Explore how
-                    these questions shape our views on intellectual honesty and creative freedom.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <footer>Footer Placeholder Text</footer>
+    <!-- <footer>Footer Placeholder Text</footer> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

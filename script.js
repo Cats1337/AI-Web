@@ -21,34 +21,33 @@ function darkntMode() {
 // 
 
 
-var util = {
+const util = {
 	f: {
 		addStyle: function (elem, prop, val, vendors) {
-			var i, ii, property, value
 			if (!util.f.isElem(elem)) {
-				elem = document.getElementById(elem)
+				elem = document.getElementById(elem);
 			}
 			if (!util.f.isArray(prop)) {
-				prop = [prop]
-				val = [val]
+				prop = [prop];
+				val = [val];
 			}
-			for (i = 0; i < prop.length; i += 1) {
-				var thisProp = String(prop[i]),
-					thisVal = String(val[i])
-				if (typeof vendors !== "undefined") {
-					if (!util.f.isArray(vendors)) {
-						vendors.toLowerCase() == "all" ? vendors = ["webkit", "moz", "ms", "o"] : vendors = [vendors]
-					}
-					for (ii = 0; ii < vendors.length; ii += 1) {
-						elem.style[vendors[i] + thisProp] = thisVal
-					}
+			if (typeof vendors !== "undefined" && !util.f.isArray(vendors)) {
+				vendors = vendors.toLowerCase() == "all" ? ["webkit", "moz", "ms", "o"] : [vendors];
+			}
+			prop.forEach((thisProp, i) => {
+				thisProp = String(thisProp);
+				const thisVal = String(val[i]);
+				if (vendors) {
+					vendors.forEach(vendor => {
+						elem.style[vendor + thisProp] = thisVal;
+					});
 				}
-				thisProp = thisProp.charAt(0).toLowerCase() + thisProp.slice(1)
-				elem.style[thisProp] = thisVal
-			}
+				thisProp = thisProp.charAt(0).toLowerCase() + thisProp.slice(1);
+				elem.style[thisProp] = thisVal;
+			});
 		},
 		cssLoaded: function (event) {
-			var child = util.f.gettrg(event)
+			let child = util.f.gettrg(event)
 			child.setAttribute("media", "all")
 		},
 		events: {
@@ -98,7 +97,7 @@ form = {
 f: {
 	init: {
 		register: function () {
-			var child, children = document.getElementsByClassName("field"), i
+			let child, children = document.getElementsByClassName("field"), i
 			for (i = 0; i < children.length; i += 1) {
 				child = children[i]
 				util.f.addStyle(child, "opacity", 1)
@@ -116,104 +115,145 @@ f: {
 	},
 	select: {
 		blur: function (field) {
-			field.classList.remove("focused")
-			var child, children = field.childNodes, i, ii, nested_child, nested_children
-			for (i = 0; i < children.length; i += 1) {
-				child = children[i]
+			field.classList.remove("focused");
+			let children = field.childNodes;
+			for (const element of children) {
+				let child = element;
 				if (util.f.isElem(child)) {
-					if (child.classList.contains("deselect")) {
-						child.parentNode.removeChild(child)
-					} else if (child.tagName == "SPAN") {
-						if (!field.dataset.value) {
-							util.f.addStyle(child, ["fontSize", "Top"], ["16px", "32px"])
-						}
-					} else if (child.classList.contains("psuedo_select")) {
-						nested_children = child.childNodes
-						for (ii = 0; ii < nested_children.length; ii += 1) {
-							nested_child = nested_children[ii]
-							if (util.f.isElem(nested_child)) {
-								if (nested_child.tagName == "SPAN") {
-									if (!field.dataset.value) {
-										util.f.addStyle(nested_child, ["opacity", "transform"], [0, "translateY(24px)"])
-									}
-								} else if (nested_child.tagName == "UL") {
-										util.f.addStyle(nested_child, ["height", "opacity"], [0, 0])
-								}
-							}
-						}
-					}
+					this.handleChildBlur(child, field);
 				}
+			}
+		},	
+
+		handleChildBlur: function (child, field) {
+			if (child.classList.contains("deselect")) {
+				child.parentNode.removeChild(child);
+			} else if (child.tagName == "SPAN") {
+				this.handleSpanBlur(child, field);
+			} else if (child.classList.contains("psuedo_select")) {
+				this.handlePsuedoSelectBlur(child, field);
+			}
+		},
+
+		handleSpanBlur: function (child, field) {
+			if (!field.dataset.value) {
+				util.f.addStyle(child, ["fontSize", "Top"], ["16px", "32px"]);
+			}
+		},
+
+		handlePsuedoSelectBlur: function (child, field) {
+			let nested_children = child.childNodes;
+			for (const element of nested_children) {
+				let nested_child = element;
+				if (util.f.isElem(nested_child)) {
+					this.handleNestedChildBlur(nested_child, field);
+				}
+			}
+		},
+
+		handleNestedChildBlur: function (nested_child, field) {
+			if (nested_child.tagName == "SPAN") {
+				if (!field.dataset.value) {
+					util.f.addStyle(nested_child, ["opacity", "transform"], [0, "translateY(24px)"]);
+				}
+			} else if (nested_child.tagName == "UL") {
+				util.f.addStyle(nested_child, ["height", "opacity"], [0, 0]);
 			}
 		},
 		focus: function (field) {
-			field.classList.add("focused")
-			var bool = false, child, children = field.childNodes, i, ii, iii, nested_child, nested_children, nested_nested_child, nested_nested_children, size = 0
-			for (i = 0; i < children.length; i += 1) {
-				child = children[i]
-				util.f.isElem(child) && child.classList.contains("deselect") ? bool = true : null
+			field.classList.add("focused");
+			this.addDeselectElement(field);
+			this.expandPsuedoSelect(field);
+		},
+
+		addDeselectElement: function (field) {
+			let bool = false;
+			const children = field.childNodes;
+			for (const child of children) {
+				if (util.f.isElem(child) && child.classList.contains("deselect")) {
+					bool = true;
+					break;
+				}
 			}
 			if (!bool) {
-				child = document.createElement("div")
-				child.className = "deselect"
-				child.addEventListener("click", form.f.select.toggle)
-				field.insertBefore(child, children[0])
+				const child = document.createElement("div");
+				child.className = "deselect";
+				child.addEventListener("click", form.f.select.toggle);
+				field.insertBefore(child, children[0]);
 			}
-			for (i = 0; i < children.length; i += 1) {
-				child = children[i]
+		},
+
+		expandPsuedoSelect: function (field) {
+			const children = field.childNodes;
+			for (const child of children) {
 				if (util.f.isElem(child) && child.classList.contains("psuedo_select")) {
-					nested_children = child.childNodes
-					for (ii = 0; ii < nested_children.length; ii += 1) {
-						nested_child = nested_children[ii]
-						if (util.f.isElem(nested_child) && nested_child.tagName == "UL") {
-							size = 0
-							nested_nested_children = nested_child.childNodes
-							for (iii = 0; iii < nested_nested_children.length; iii += 1) {
-								nested_nested_child = nested_nested_children[iii]
-								if (util.f.isElem(nested_nested_child) && nested_nested_child.tagName == "LI") {
-									size += util.f.getSize(nested_nested_child, "height")
-									console.log("size: " + size)
-								}
-							}
-							util.f.addStyle(nested_child, ["height", "opacity"], [size + "px", 1])
-						}
+					this.expandNestedChildren(child);
+				}
+			}
+		},
+
+		expandNestedChildren: function (child) {
+			const nested_children = child.childNodes;
+			for (const nested_child of nested_children) {
+				if (util.f.isElem(nested_child) && nested_child.tagName == "UL") {
+					this.expandNestedNestedChildren(nested_child);
+				}
+			}
+		},
+
+		expandNestedNestedChildren: function (nested_child) {
+			const nested_nested_children = nested_child.childNodes;
+			let size = 0;
+			for (const nested_nested_child of nested_nested_children) {
+				if (util.f.isElem(nested_nested_child) && nested_nested_child.tagName == "LI") {
+					size += util.f.getSize(nested_nested_child, "height");
+				}
+			}
+			util.f.addStyle(nested_child, ["height", "opacity"], [size + "px", 1]);
+		},
+		selection: function (child, parent) {
+			if (util.f.isElem(child) && util.f.isElem(parent)) {
+				parent.dataset.value = child.dataset.value;
+				const value = child.innerHTML;
+				this.updateChildren(parent.childNodes, value);
+			}
+		},
+
+
+
+		updateChildren: function (children, value) {
+			for (const child of children) {
+				if (util.f.isElem(child)) {
+					if (child.classList.contains("psuedo_select")) {
+						this.updateNestedChildren(child.childNodes, value);
+					} else if (child.tagName == "SPAN") {
+						util.f.addStyle(child, ["fontSize", "top"], ["12px", "8px"]);
+						util.f.addStyle(child, ["color"], ["#666666"]);
+						// translateX(-10px)
+						util.f.addStyle(child, ["transform"], ["translateX(-12px)"]);
 					}
 				}
 			}
 		},
-		selection: function (child, parent) {
-			var children = parent.childNodes, i, ii, nested_child, nested_children, time = 0, value
-			if (util.f.isElem(child) && util.f.isElem(parent)) {
-				parent.dataset.value = child.dataset.value
-				value = child.innerHTML
-			}
-			for (i = 0; i < children.length; i += 1) {
-				child = children[i]
-				if (util.f.isElem(child)) {
-					if (child.classList.contains("psuedo_select")) {
-						nested_children = child.childNodes
-						for (ii = 0; ii < nested_children.length; ii += 1) {
-							nested_child = nested_children[ii]
-							if (util.f.isElem(nested_child) && nested_child.classList.contains("selected")) {
-								if (nested_child.innerHTML)  {
-									time = 1E2
-									util.f.addStyle(nested_child, ["opacity", "transform"], [0, "translateY(24px)"], "all")
-								}
-								setTimeout(function (c, v) {
-									c.innerHTML = v
-									util.f.addStyle(c, ["opacity", "transform", "transitionDuration"], [1, "translateY(0px)", ".1s"], "all")
-								}, time, nested_child, value)
-							}
-						}
-					} else if (child.tagName == "SPAN") {
-						util.f.addStyle(child, ["fontSize", "top"], ["12px", "8px"])
-                        util.f.addStyle(child, ["color"], ["#666666"])
-				   }
-			   }
+
+		updateNestedChildren: function (nested_children, value) {
+			let time = 0;
+			for (const nested_child of nested_children) {
+				if (util.f.isElem(nested_child) && nested_child.classList.contains("selected")) {
+					if (nested_child.innerHTML) {
+						time = 1E2;
+						util.f.addStyle(nested_child, ["opacity", "transform"], [0, "translateY(24px)"], "all");
+					}
+					setTimeout(function (c, v) {
+						c.innerHTML = v;
+						util.f.addStyle(c, ["opacity", "transform", "transitionDuration"], [1, "translateY(0px)", ".1s"], "all");
+					}, time, nested_child, value);
+				}
 			}
 		},
 		toggle: function (event) {
 			util.f.events.stop(event)
-			var child = util.f.gettrg(event), children, i, parent
+			let child = util.f.gettrg(event), parent
 			switch (true) {
 				case (child.classList.contains("psuedo_select")):
 				case (child.classList.contains("deselect")):
@@ -233,62 +273,443 @@ f: {
 }}
 window.onload = form.f.init.register
 
+// 
 
-// <!-- Content to be generated(pulled) dynamically based on Category and Desc -->
-// File to pull from:
-// /data.json
-// {
-//     "content": [ 
-//       {
-//         "sectionID": "sec1",
-//         "category": "What AI Actually Is",
-//         "descriptions": [
-//           {
-//             "descID": "c1t1",
-//             "desc_title": "Explanation 1",
-//             "desc_words": [
-//               "Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data."
-//             ]
-//           },
-//           {
-//             "descID": "c1t2",
-//             "desc_title": "Explanation 2",
-//             "desc_words": [
-//               "lorem ipsum"
-//             ]
-//           },
-//           {
-//             "descID": "c1t3",
-//             "desc_title": "Explanation 3",
-//             "desc_words": [
-//               "lorem ipsum"
-//             ]
-//           }
-//         ]
-//       }
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        // Get the container where the content will be inserted
+        const contentContainer = document.getElementById('content-container');
+		// add wrapper class to content container
+		contentContainer.classList.add('wrapper');
 
-function loadContent() {
-	fetch('data.json')
-		.then(response => response.json())
-		.then(data => {
-			let output = '<h2>Content</h2>';
-			data.content.forEach(function (content) {
-				output += `
-				<div class="card">
-					<h3>${content.category}</h3>
-					<ul>
-					${content.descriptions.map(function (desc) {
-						return `
-							<li>
-								<h4>${desc.desc_title}</h4>
-								<p>${desc.desc_words}</p>
-							</li>
-						`;
-					}).join('')}
-					</ul>
-				</div>
-				`;
+        // Set up event listeners on the dropdowns to filter and display content
+        document.querySelector('#img_category_discipline').addEventListener('click', renderContent);
+        document.querySelector('#img_category_knowledge').addEventListener('click', renderContent);
+
+        function renderContent() {
+            // Get the selected values for discipline and knowledge
+            const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
+            const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
+
+            // Clear existing content
+            contentContainer.innerHTML = '';
+
+            // Filter the data based on the selected discipline and knowledge
+            const filteredData = data.filter(item =>
+                item.discipline === selectedDiscipline && item.knowledge === selectedKnowledge
+            );
+
+            // Group filtered data by category and section
+            const groupedData = {};
+            filteredData.forEach(item => {
+                if (!groupedData[item.category]) {
+                    groupedData[item.category] = [];
+                }
+                groupedData[item.category].push(item);
+            });
+
+            // Create tabs for categories
+            const tabWrapper = document.createElement('div');
+            tabWrapper.classList.add('tabs-wrapper');
+
+            // Input elements for tab functionality
+            let categoryIndex = 1; // Index for categories
+            for (const category in groupedData) {
+                const radioInput = document.createElement('input');
+                radioInput.classList.add('radio');
+                radioInput.type = 'radio';
+                radioInput.name = 'group';
+                radioInput.id = `sec${categoryIndex}`;
+                if (categoryIndex === 0) radioInput.checked = true;
+
+                tabWrapper.appendChild(radioInput);
+
+                // Tab labels
+                const tabLabel = document.createElement('label');
+                tabLabel.classList.add('tab');
+                tabLabel.setAttribute('for', `sec${categoryIndex}`);
+                tabLabel.textContent = category;
+                tabWrapper.appendChild(tabLabel);
+
+                categoryIndex++;
+            }
+
+            contentContainer.appendChild(tabWrapper);
+
+            // Panels for each category
+            const panelWrapper = document.createElement('div');
+            panelWrapper.classList.add('panels');
+
+            categoryIndex = 1; // Start from 1 to match radio button IDs
+			for (const category in groupedData) {
+				const panel = document.createElement('div');
+				panel.classList.add('panel');
+				panel.classList.add('explainer');
+				panel.id = `panel${categoryIndex}`; // Match panel ID with radio button ID
+				if (categoryIndex === 1) panel.style.display = 'grid'; // Show the first panel by default
+
+				// <h2 class="category" id="c1">Category</h2>
+				const categoryTitle = document.createElement('h2');
+				categoryTitle.classList.add('category');
+				categoryTitle.id = `c${categoryIndex}`;
+				const catSpan = document.createElement('span');
+				catSpan.textContent = category;
+				categoryTitle.appendChild(catSpan);
+				panel.appendChild(categoryTitle);
+
+
+				// Create sections for the panel
+				groupedData[category].forEach((item, sectionIndex) => {
+					const section = document.createElement('div');
+					section.classList.add('section');
+					section.id = `sec${sectionIndex + 1}`;
+					// section.style.gridColumn = sectionIndex + 1;
+
+					const details = document.createElement('details');
+					details.classList.add('sectionTab');
+
+					const summary = document.createElement('summary');
+					summary.classList.add('sectionTitle');
+
+					const secSpan = document.createElement('span');
+					secSpan.textContent = item.section;
+
+
+					if (item.section === 'Replacing You') {
+						const scrib = document.createElement('div');
+						scrib.classList.add('scrib');
+					
+						const svg = document.createElement('svg');
+						svg.classList.add('scribble');
+						
+						fetch('scribble.svg') // Fetch the SVG file 
+						.then(response => response.text())
+						.then(svgContent => {
+							// Create a container for the SVG and set the innerHTML to the SVG content
+							const svgContainer = document.createElement('div');
+							svgContainer.innerHTML = svgContent;
+
+							// Append the SVG to the scrib div
+							scrib.appendChild(svgContainer.firstChild);
+							
+							const assistSpan = document.createElement('span');
+							assistSpan.classList.add('assist');
+							assistSpan.textContent = 'Assisting';
+						
+							secSpan.style.position = 'absolute';
+							secSpan.style.transform = 'translateY(30px)';
+
+							// Append the scrib div to the summary
+							summary.appendChild(scrib);
+							summary.appendChild(secSpan);
+							summary.appendChild(assistSpan);
+							details.appendChild(summary);
+						})
+						.catch(err => console.error('Error loading SVG:', err));
+					}
+					 else {
+						summary.appendChild(secSpan);
+						details.appendChild(summary);
+					}
+
+					const content = document.createElement('div');
+					content.classList.add('content');
+					const contentParagraph = document.createElement('p');
+					// if empty, add a message
+					if (item.content === '') {
+						item.content = 'Content has not been generated for this section yet, apologies.';
+					}
+					contentParagraph.textContent = item.content;
+
+					content.appendChild(contentParagraph);
+					details.appendChild(content);
+					section.appendChild(details);
+
+					panel.appendChild(section);
+				});
+
+				panelWrapper.appendChild(panel);
+				categoryIndex++;
+			}
+
+
+            contentContainer.appendChild(panelWrapper);
+
+            // Tab switching logic
+            document.querySelectorAll('.radio').forEach((radio, index) => {
+				radio.addEventListener('change', () => {
+					document.querySelectorAll('.panel').forEach((panel, panelIndex) => {
+						panel.style.display = panelIndex === index ? 'grid' : 'none';
+					});
+				});
 			});
-			document.getElementById('content').innerHTML = output;
-		});
+					
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupDropdown('img_category_discipline');
+    setupDropdown('img_category_knowledge');
+});
+
+function setupDropdown(dropdownId) {
+    const dropdown = document.querySelector(`#${dropdownId} .options`);
+    if (!dropdown) {
+        console.error(`Dropdown options element not found for ID: ${dropdownId}`);
+        return;
+    }
+
+    dropdown.addEventListener('click', event => {
+        const target = event.target;
+        if (target.classList.contains('option')) {
+            const selectedValue = target.getAttribute('data-value');
+            const selectedText = target.textContent;
+
+            const selectedSpan = document.querySelector(`#${dropdownId} .selected`);
+            if (selectedSpan) {
+                selectedSpan.textContent = selectedText;
+                selectedSpan.setAttribute('data-value', selectedValue);
+                console.log(`${dropdownId} selected:`, selectedValue);
+            }
+
+            // renderContent();
+        }
+    });
 }
+
+
+// Fetch the data from JSON and set up the page content
+
+// fetch('data.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         // Get the container where the content will be inserted
+//         const contentContainer = document.getElementById('content-container');
+
+//         // Set up event listeners on the dropdowns to filter and display content
+//         document.querySelector('#img_category_discipline').addEventListener('click', renderContent);
+//         document.querySelector('#img_category_knowledge').addEventListener('click', renderContent);
+
+//         function renderContent() {
+//             // Get the selected values for discipline and knowledge
+//             const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
+//             const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
+
+//             // Clear existing content
+//             contentContainer.innerHTML = '';
+
+//             // Filter the data based on the selected discipline and knowledge
+//             const filteredData = data.filter(item => 
+//                 item.discipline === selectedDiscipline && item.knowledge === selectedKnowledge
+//             );
+
+//             // Group filtered data by category and section
+//             const groupedData = {};
+//             filteredData.forEach(item => {
+//                 if (!groupedData[item.category]) {
+//                     groupedData[item.category] = [];
+//                 }
+//                 groupedData[item.category].push(item);
+//             });
+
+//             // Iterate over each category to create sections and display content
+//             let categoryIndex = 0; // Index for each category
+//             for (const category in groupedData) {
+//                 // Create the container div for each explainer
+//                 const explainer = document.createElement('div');
+//                 explainer.classList.add('explainer');
+//                 explainer.id = `explainer-${category} sec${categoryIndex + 1}`; // Unique ID for each explainer
+
+//                 // Create the category title element
+//                 const categoryTitle = document.createElement('h2');
+//                 categoryTitle.classList.add('category');
+//                 categoryTitle.id = `category-${category} c${categoryIndex + 1}`;
+//                 const catSpan = document.createElement('span');
+//                 catSpan.textContent = category;
+//                 categoryTitle.appendChild(catSpan);
+//                 explainer.appendChild(categoryTitle);
+
+//                 // Create up to 3 sections for each category
+//                 groupedData[category].slice(0, 3).forEach((item, sectionIndex) => {
+//                     // Create section div
+//                     const section = document.createElement('div');
+//                     section.classList.add('section');
+
+//                     // Create details for sectionTab
+//                     const details = document.createElement('details');
+//                     details.classList.add('sectionTab');
+
+//                     // Create summary for sectionTitle
+//                     const summary = document.createElement('summary');
+//                     summary.classList.add('sectionTitle');
+//                     const secSpan = document.createElement('span');
+//                     secSpan.textContent = item.section; // Set the section title
+
+//                     summary.appendChild(secSpan);
+//                     details.appendChild(summary);
+
+//                     // Create content section
+//                     const content = document.createElement('div');
+//                     content.classList.add('content');
+//                     const contentParagraph = document.createElement('p');
+//                     contentParagraph.textContent = item.content; // Add content
+
+//                     content.appendChild(contentParagraph);
+//                     details.appendChild(content);
+//                     section.appendChild(details);
+
+//                     // Set a unique ID for each section
+//                     details.id = `sec${sectionIndex + 1}`;
+
+//                     // Append section to explainer
+//                     explainer.appendChild(section);
+//                 });
+
+//                 // Append the explainer to the content container
+//                 contentContainer.appendChild(explainer);
+
+//                 categoryIndex++;
+//             }
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//     });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     setupDropdown('img_category_discipline');
+//     setupDropdown('img_category_knowledge');
+// });
+
+// function setupDropdown(dropdownId) {
+//     // Get the dropdown list
+//     const dropdown = document.querySelector(`#${dropdownId} .options`);
+//     if (!dropdown) {
+//         console.error(`Dropdown options element not found for ID: ${dropdownId}`);
+//         return;
+//     }
+
+//     // Attach event listener to the dropdown options
+//     dropdown.addEventListener('click', event => {
+//         const target = event.target;
+//         if (target.classList.contains('option')) {
+//             // Get the selected value and text
+//             const selectedValue = target.getAttribute('data-value');
+//             const selectedText = target.textContent;
+
+//             // Update the selected value
+//             const selectedSpan = document.querySelector(`#${dropdownId} .selected`);
+//             if (selectedSpan) {
+//                 selectedSpan.textContent = selectedText;
+//                 selectedSpan.setAttribute('data-value', selectedValue);
+
+//                 console.log(`${dropdownId} selected:`, selectedValue);
+//             }
+
+//             // Trigger content render
+//             renderContent();
+//         }
+//     });
+// }
+
+// function renderContent() {
+//     const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
+//     const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
+
+//     console.log(`Discipline: ${selectedDiscipline}, Knowledge: ${selectedKnowledge}`);
+
+//     // Add your logic to dynamically render content based on selections
+// }
+
+
+
+
+// fetch('data.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         // Get the container where the content will be inserted
+//         const contentContainer = document.getElementById('content-container');
+
+//         // Define the categories of interest
+//         const categories = ['What AI Actually Is', 'How AI Works', 'How AI Detectors Work', 'Effects of Using AI', 'AI Detector Issues'];
+// 		const sections = ['Explanation', 'Comparison', 'Analogy', 'Input → Output', 'Human-like Learning', 'Learning and Biases', 'Inside Mechanics', 'Limitations and Flaws', 'Confirmation Bias',  'Replacing You',  'Applications',  'Misconceptions',  'Accuracy Concerns',  'Wrongful Assumptions',  'Ethical Implications']
+
+
+//         // Group data by category
+//         const groupedData = {};
+//         data.forEach(item => {
+//             if (categories.includes(item.category)) {
+//                 if (!groupedData[item.category]) {
+//                     groupedData[item.category] = [];
+//                 }
+//                 groupedData[item.category].push(item);
+//             }
+//         });
+
+//         // Log grouped data to check which categories have data
+//         console.log('Grouped Data:', groupedData);
+
+//         // Iterate over each category to create an explainer
+//         categories.forEach((category, index) => {
+//             if (groupedData[category]) {
+//                 // Create the container div for each explainer
+//                 const explainer = document.createElement('div');
+//                 explainer.classList.add('explainer');
+//                 explainer.id = `sec${index + 1}`; // Unique ID for each explainer
+
+//                 // Create the category title element
+//                 const categoryTitle = document.createElement('h2');
+//                 categoryTitle.classList.add('category');
+//                 categoryTitle.id = `c${index + 1}`;
+//                 const catSpan = document.createElement('span');
+//                 catSpan.textContent = category;
+//                 categoryTitle.appendChild(catSpan);
+//                 explainer.appendChild(categoryTitle);
+
+//                 // Create up to 3 sections for each category
+//                 groupedData[category].slice(0, 3).forEach((item, sectionIndex) => {
+//                     // Create section div
+//                     const section = document.createElement('div');
+//                     section.classList.add('section');
+
+//                     // Create details for sectionTab
+//                     const details = document.createElement('details');
+//                     details.classList.add('sectionTab');
+
+//                     // Create summary for sectionTitle
+//                     const summary = document.createElement('summary');
+//                     summary.classList.add('sectionTitle');
+//                     const secSpan = document.createElement('span');
+//                     secSpan.textContent = item.section; // Set the section title
+
+//                     summary.appendChild(secSpan);
+//                     details.appendChild(summary);
+
+//                     // Create content section
+//                     const content = document.createElement('div');
+//                     content.classList.add('content');
+//                     const contentParagraph = document.createElement('p');
+//                     contentParagraph.textContent = item.content; // Add content
+
+//                     content.appendChild(contentParagraph);
+//                     details.appendChild(content);
+//                     section.appendChild(details);
+
+//                     // Append section to explainer
+//                     explainer.appendChild(section);
+//                 });
+
+//                 // Append the explainer to the content container
+//                 contentContainer.appendChild(explainer);
+//             } else {
+//                 console.log(`No data found for category: ${category}`);
+//             }
+//         });
+//     })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//     });
