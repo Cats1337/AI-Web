@@ -1,3 +1,5 @@
+// import { rewriteContent } from './chatgpt.js';  // Adjust path as necessary
+
 window.onload = function () {
     const checkbox = document.getElementById("light");
     if (checkbox.checked) {
@@ -7,7 +9,6 @@ window.onload = function () {
     if (window.matchMedia('(prefers-color-scheme: light)').matches) {
         darkntMode();
     }
-
 };
 
 function darkntMode() {
@@ -275,186 +276,190 @@ window.onload = form.f.init.register
 
 // 
 
-fetch('data.json')
-    .then(response => response.json())
+getData(null, null, null, null, null) // Fetch all data initially
     .then(data => {
-        // Get the container where the content will be inserted
         const contentContainer = document.getElementById('content-container');
-		// add wrapper class to content container
-		contentContainer.classList.add('wrapper');
+        contentContainer.classList.add('wrapper');
 
-        // Set up event listeners on the dropdowns to filter and display content
-        document.querySelector('#img_category_discipline').addEventListener('click', renderContent);
-        document.querySelector('#img_category_knowledge').addEventListener('click', renderContent);
+        // Set up event listeners on the dropdowns to trigger content rendering
+        document.querySelector('#img_category_discipline').addEventListener('click', handleSelectionChange);
+        document.querySelector('#img_category_knowledge').addEventListener('click', handleSelectionChange);	
 
-        function renderContent() {
-            // Get the selected values for discipline and knowledge
-            const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
-            const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
+        function handleSelectionChange() {
+            const selectedDiscipline = document.querySelector('#img_category_discipline .selected')?.getAttribute('data-value');
+            const selectedKnowledge = document.querySelector('#img_category_knowledge .selected')?.getAttribute('data-value');
 
-            // Clear existing content
-            contentContainer.innerHTML = '';
-
-            // Filter the data based on the selected discipline and knowledge
-            const filteredData = data.filter(item =>
-                item.discipline === selectedDiscipline && item.knowledge === selectedKnowledge
-            );
-
-            // Group filtered data by category and section
-            const groupedData = {};
-            filteredData.forEach(item => {
-                if (!groupedData[item.category]) {
-                    groupedData[item.category] = [];
-                }
-                groupedData[item.category].push(item);
-            });
-
-            // Create tabs for categories
-            const tabWrapper = document.createElement('div');
-            tabWrapper.classList.add('tabs-wrapper');
-
-            // Input elements for tab functionality
-            let categoryIndex = 1; // Index for categories
-            for (const category in groupedData) {
-                const radioInput = document.createElement('input');
-                radioInput.classList.add('radio');
-                radioInput.type = 'radio';
-                radioInput.name = 'group';
-                radioInput.id = `sec${categoryIndex}`;
-                if (categoryIndex === 0) radioInput.checked = true;
-
-                tabWrapper.appendChild(radioInput);
-
-                // Tab labels
-                const tabLabel = document.createElement('label');
-                tabLabel.classList.add('tab');
-                tabLabel.setAttribute('for', `sec${categoryIndex}`);
-                tabLabel.textContent = category;
-                tabWrapper.appendChild(tabLabel);
-
-                categoryIndex++;
+            // Only render content when both selections are made
+            if (selectedDiscipline && selectedKnowledge) {
+                renderContent(selectedDiscipline, selectedKnowledge);
             }
 
-            contentContainer.appendChild(tabWrapper);
 
-            // Panels for each category
-            const panelWrapper = document.createElement('div');
-            panelWrapper.classList.add('panels');
-
-            categoryIndex = 1; // Start from 1 to match radio button IDs
-			for (const category in groupedData) {
-				const panel = document.createElement('div');
-				panel.classList.add('panel');
-				panel.classList.add('explainer');
-				panel.id = `panel${categoryIndex}`; // Match panel ID with radio button ID
-				if (categoryIndex === 1) panel.style.display = 'grid'; // Show the first panel by default
-
-				// <h2 class="category" id="c1">Category</h2>
-				const categoryTitle = document.createElement('h2');
-				categoryTitle.classList.add('category');
-				categoryTitle.id = `c${categoryIndex}`;
-				const catSpan = document.createElement('span');
-				catSpan.textContent = category;
-				categoryTitle.appendChild(catSpan);
-				panel.appendChild(categoryTitle);
-
-
-				// Create sections for the panel
-				groupedData[category].forEach((item, sectionIndex) => {
-					const section = document.createElement('div');
-					section.classList.add('section');
-					section.id = `sec${sectionIndex + 1}`;
-					// section.style.gridColumn = sectionIndex + 1;
-
-					const details = document.createElement('details');
-					details.classList.add('sectionTab');
-
-					const summary = document.createElement('summary');
-					summary.classList.add('sectionTitle');
-
-					const secSpan = document.createElement('span');
-					secSpan.textContent = item.section;
-
-
-					if (item.section === 'Replacing You') {
-						const scrib = document.createElement('div');
-						scrib.classList.add('scrib');
-					
-						const svg = document.createElement('svg');
-						svg.classList.add('scribble');
-						
-						fetch('scribble.svg') // Fetch the SVG file 
-						.then(response => response.text())
-						.then(svgContent => {
-							// Create a container for the SVG and set the innerHTML to the SVG content
-							const svgContainer = document.createElement('div');
-							svgContainer.innerHTML = svgContent;
-
-							// Append the SVG to the scrib div
-							scrib.appendChild(svgContainer.firstChild);
-							
-							const assistSpan = document.createElement('span');
-							assistSpan.classList.add('assist');
-							assistSpan.textContent = 'Assisting';
-						
-							secSpan.style.position = 'absolute';
-							secSpan.style.transform = 'translateY(30px)';
-
-							// Append the scrib div to the summary
-							summary.appendChild(scrib);
-							summary.appendChild(secSpan);
-							summary.appendChild(assistSpan);
-							details.appendChild(summary);
-						})
-						.catch(err => console.error('Error loading SVG:', err));
-					}
-					 else {
-						summary.appendChild(secSpan);
-						details.appendChild(summary);
-					}
-
-					const content = document.createElement('div');
-					content.classList.add('content');
-					const contentParagraph = document.createElement('p');
-					// if empty, add a message
-					if (item.content === '') {
-						item.content = 'Content has not been generated for this section yet, apologies.';
-					}
-					contentParagraph.textContent = item.content;
-
-					content.appendChild(contentParagraph);
-					details.appendChild(content);
-					section.appendChild(details);
-
-					panel.appendChild(section);
-				});
-
-				panelWrapper.appendChild(panel);
-				categoryIndex++;
-			}
-
-
-            contentContainer.appendChild(panelWrapper);
-
-            // Tab switching logic
-            document.querySelectorAll('.radio').forEach((radio, index) => {
-				radio.addEventListener('change', () => {
-					document.querySelectorAll('.panel').forEach((panel, panelIndex) => {
-						panel.style.display = panelIndex === index ? 'grid' : 'none';
-					});
-				});
-			});
-					
         }
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
 
+		function renderContent(selectedDiscipline, selectedKnowledge) {
+			// Clear existing content
+			contentContainer.innerHTML = '';
+		
+			// Fetch and filter data dynamically based on selected values
+			getData(selectedDiscipline, selectedKnowledge, null, null)
+				.then(filteredData => {
+					// Group filtered data by category and section
+					const groupedData = {};
+					filteredData.forEach(item => {
+						if (!groupedData[item.category]) {
+							groupedData[item.category] = [];
+						}
+						groupedData[item.category].push(item);
+					});
+		
+					// Create tabs for categories
+					const tabWrapper = document.createElement('div');
+					tabWrapper.classList.add('tabs-wrapper');
+		
+					let categoryIndex = 1; // Index for categories
+					for (const category in groupedData) {
+						const radioInput = document.createElement('input');
+						radioInput.classList.add('radio');
+						radioInput.type = 'radio';
+						radioInput.name = 'group';
+						radioInput.id = `sec${categoryIndex}`;
+						if (categoryIndex === 1) radioInput.checked = true;
+		
+						tabWrapper.appendChild(radioInput);
+		
+						const tabLabel = document.createElement('label');
+						tabLabel.classList.add('tab');
+						tabLabel.setAttribute('for', `sec${categoryIndex}`);
+						tabLabel.textContent = category;
+						tabWrapper.appendChild(tabLabel);
+		
+						categoryIndex++;
+					}
+		
+					contentContainer.appendChild(tabWrapper);
+		
+					// Panels for each category
+					const panelWrapper = document.createElement('div');
+					panelWrapper.classList.add('panels');
+		
+					categoryIndex = 1; // Start from 1 to match radio button IDs
+					for (const category in groupedData) {
+						const panel = document.createElement('div');
+						panel.classList.add('panel');
+						panel.classList.add('explainer');
+						panel.id = `panel${categoryIndex}`;
+						if (categoryIndex === 1) panel.style.display = 'grid';
+		
+						const categoryTitle = document.createElement('h2');
+						categoryTitle.classList.add('category');
+						categoryTitle.id = `c${categoryIndex}`;
+						const catSpan = document.createElement('span');
+						catSpan.textContent = category;
+						categoryTitle.appendChild(catSpan);
+						panel.appendChild(categoryTitle);
+		
+						groupedData[category].forEach((item, sectionIndex) => {
+							const section = document.createElement('div');
+							section.classList.add('section');
+							section.id = `sec${sectionIndex + 1}`;
+		
+							// Add data attributes to hold category and section values
+							section.setAttribute('data-category', category);
+							section.setAttribute('data-section', item.section);
+		
+							// Attach event listener to capture clicks
+							section.addEventListener('click', () => {
+								const selectedCategory = section.getAttribute('data-category');
+								const selectedSection = section.getAttribute('data-section');
+								// get discipline and knowledge
+								const selectedDiscipline = document.querySelector('#img_category_discipline .selected')?.getAttribute('data-value');
+								const selectedKnowledge = document.querySelector('#img_category_knowledge .selected')?.getAttribute('data-value');
+
+								// call rewriteContent() function that's in chatgpt.js
+								rewriteContent({ discipline: selectedDiscipline, knowledge: selectedKnowledge, category: selectedCategory, section: selectedSection });
+								
+
+
+							});
+		
+							const details = document.createElement('details');
+							details.classList.add('sectionTab');
+							details.classList.add('open');
+		
+							const summary = document.createElement('summary');
+							summary.classList.add('sectionTitle');
+		
+							const secSpan = document.createElement('span');
+							secSpan.textContent = item.section;
+		
+							summary.appendChild(secSpan);
+							details.appendChild(summary);
+		
+							const content = document.createElement('div');
+							content.classList.add('content');
+							const contentParagraph = document.createElement('p');
+							contentParagraph.textContent = item.content || 'No content available';
+
+							// if content is empty, add a button to request content
+							if (!item.content) {
+								const requestButton = document.createElement('button');
+								requestButton.textContent = 'Request Content';
+								requestButton.addEventListener('click', () => {
+									// Ask for their ChatGPT API key
+									const apiKey = prompt('Please enter your ChatGPT API key:');
+									if (apiKey) {
+										// Call the rewriteContent function with the provided API key
+										rewriteContent({ 
+											discipline: selectedDiscipline, 
+											knowledge: selectedKnowledge, 
+											category: category, 
+											section: item.section, 
+											apiKey: apiKey 
+										});
+									}
+								});
+								content.appendChild(requestButton);
+							}
+
+
+							content.appendChild(contentParagraph);
+							details.appendChild(content);
+							section.appendChild(details);
+		
+							panel.appendChild(section);
+						});
+		
+						panelWrapper.appendChild(panel);
+						categoryIndex++;
+					}
+		
+					contentContainer.appendChild(panelWrapper);
+		
+					// Tab switching logic
+					document.querySelectorAll('.radio').forEach((radio, index) => {
+						radio.addEventListener('change', () => {
+							document.querySelectorAll('.panel').forEach((panel, panelIndex) => {
+								panel.style.display = panelIndex === index ? 'grid' : 'none';
+							});
+						});
+					});
+				})
+				.catch(error => {
+					console.error('Error fetching or processing data:', error);
+				});
+		}
+	});
 document.addEventListener('DOMContentLoaded', () => {
     setupDropdown('img_category_discipline');
     setupDropdown('img_category_knowledge');
 });
+
+function anotherFunction(discipline, knowledge, category, section) {
+    // console.log(`Processing category: ${category}, section: ${section}`);
+    console.log(`Processing discipline: ${discipline}, knowledge: ${knowledge}, category: ${category}, section: ${section}`);
+    // Your logic here
+}
 
 function setupDropdown(dropdownId) {
     const dropdown = document.querySelector(`#${dropdownId} .options`);
@@ -476,240 +481,39 @@ function setupDropdown(dropdownId) {
                 console.log(`${dropdownId} selected:`, selectedValue);
             }
 
-            // renderContent();
+            // handleSelectionChange();
         }
     });
 }
 
 
-// Fetch the data from JSON and set up the page content
 
-// fetch('data.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         // Get the container where the content will be inserted
-//         const contentContainer = document.getElementById('content-container');
+// get 
 
-//         // Set up event listeners on the dropdowns to filter and display content
-//         document.querySelector('#img_category_discipline').addEventListener('click', renderContent);
-//         document.querySelector('#img_category_knowledge').addEventListener('click', renderContent);
+function getData(discipline, knowledge, category, section, content) {
+    return fetch('data.json') // Fetch the JSON file
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load data: ${response.statusText}`);
+            }
+            return response.json(); // Parse the JSON file
+        })
+        .then(data => {
+            // Filter the data based on the provided parameters
+            const filteredData = data.filter(item => {
+                return (
+                    (!discipline || item.discipline === discipline) &&
+                    (!knowledge || item.knowledge === knowledge) &&
+                    (!category || item.category === category) &&
+                    (!section || item.section === section) &&
+                    (!content || item.content === content)
+                );
+            });
 
-//         function renderContent() {
-//             // Get the selected values for discipline and knowledge
-//             const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
-//             const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
-
-//             // Clear existing content
-//             contentContainer.innerHTML = '';
-
-//             // Filter the data based on the selected discipline and knowledge
-//             const filteredData = data.filter(item => 
-//                 item.discipline === selectedDiscipline && item.knowledge === selectedKnowledge
-//             );
-
-//             // Group filtered data by category and section
-//             const groupedData = {};
-//             filteredData.forEach(item => {
-//                 if (!groupedData[item.category]) {
-//                     groupedData[item.category] = [];
-//                 }
-//                 groupedData[item.category].push(item);
-//             });
-
-//             // Iterate over each category to create sections and display content
-//             let categoryIndex = 0; // Index for each category
-//             for (const category in groupedData) {
-//                 // Create the container div for each explainer
-//                 const explainer = document.createElement('div');
-//                 explainer.classList.add('explainer');
-//                 explainer.id = `explainer-${category} sec${categoryIndex + 1}`; // Unique ID for each explainer
-
-//                 // Create the category title element
-//                 const categoryTitle = document.createElement('h2');
-//                 categoryTitle.classList.add('category');
-//                 categoryTitle.id = `category-${category} c${categoryIndex + 1}`;
-//                 const catSpan = document.createElement('span');
-//                 catSpan.textContent = category;
-//                 categoryTitle.appendChild(catSpan);
-//                 explainer.appendChild(categoryTitle);
-
-//                 // Create up to 3 sections for each category
-//                 groupedData[category].slice(0, 3).forEach((item, sectionIndex) => {
-//                     // Create section div
-//                     const section = document.createElement('div');
-//                     section.classList.add('section');
-
-//                     // Create details for sectionTab
-//                     const details = document.createElement('details');
-//                     details.classList.add('sectionTab');
-
-//                     // Create summary for sectionTitle
-//                     const summary = document.createElement('summary');
-//                     summary.classList.add('sectionTitle');
-//                     const secSpan = document.createElement('span');
-//                     secSpan.textContent = item.section; // Set the section title
-
-//                     summary.appendChild(secSpan);
-//                     details.appendChild(summary);
-
-//                     // Create content section
-//                     const content = document.createElement('div');
-//                     content.classList.add('content');
-//                     const contentParagraph = document.createElement('p');
-//                     contentParagraph.textContent = item.content; // Add content
-
-//                     content.appendChild(contentParagraph);
-//                     details.appendChild(content);
-//                     section.appendChild(details);
-
-//                     // Set a unique ID for each section
-//                     details.id = `sec${sectionIndex + 1}`;
-
-//                     // Append section to explainer
-//                     explainer.appendChild(section);
-//                 });
-
-//                 // Append the explainer to the content container
-//                 contentContainer.appendChild(explainer);
-
-//                 categoryIndex++;
-//             }
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data:', error);
-//     });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     setupDropdown('img_category_discipline');
-//     setupDropdown('img_category_knowledge');
-// });
-
-// function setupDropdown(dropdownId) {
-//     // Get the dropdown list
-//     const dropdown = document.querySelector(`#${dropdownId} .options`);
-//     if (!dropdown) {
-//         console.error(`Dropdown options element not found for ID: ${dropdownId}`);
-//         return;
-//     }
-
-//     // Attach event listener to the dropdown options
-//     dropdown.addEventListener('click', event => {
-//         const target = event.target;
-//         if (target.classList.contains('option')) {
-//             // Get the selected value and text
-//             const selectedValue = target.getAttribute('data-value');
-//             const selectedText = target.textContent;
-
-//             // Update the selected value
-//             const selectedSpan = document.querySelector(`#${dropdownId} .selected`);
-//             if (selectedSpan) {
-//                 selectedSpan.textContent = selectedText;
-//                 selectedSpan.setAttribute('data-value', selectedValue);
-
-//                 console.log(`${dropdownId} selected:`, selectedValue);
-//             }
-
-//             // Trigger content render
-//             renderContent();
-//         }
-//     });
-// }
-
-// function renderContent() {
-//     const selectedDiscipline = document.querySelector('#img_category_discipline .selected').getAttribute('data-value');
-//     const selectedKnowledge = document.querySelector('#img_category_knowledge .selected').getAttribute('data-value');
-
-//     console.log(`Discipline: ${selectedDiscipline}, Knowledge: ${selectedKnowledge}`);
-
-//     // Add your logic to dynamically render content based on selections
-// }
-
-
-
-
-// fetch('data.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         // Get the container where the content will be inserted
-//         const contentContainer = document.getElementById('content-container');
-
-//         // Define the categories of interest
-//         const categories = ['What AI Actually Is', 'How AI Works', 'How AI Detectors Work', 'Effects of Using AI', 'AI Detector Issues'];
-// 		const sections = ['Explanation', 'Comparison', 'Analogy', 'Input → Output', 'Human-like Learning', 'Learning and Biases', 'Inside Mechanics', 'Limitations and Flaws', 'Confirmation Bias',  'Replacing You',  'Applications',  'Misconceptions',  'Accuracy Concerns',  'Wrongful Assumptions',  'Ethical Implications']
-
-
-//         // Group data by category
-//         const groupedData = {};
-//         data.forEach(item => {
-//             if (categories.includes(item.category)) {
-//                 if (!groupedData[item.category]) {
-//                     groupedData[item.category] = [];
-//                 }
-//                 groupedData[item.category].push(item);
-//             }
-//         });
-
-//         // Log grouped data to check which categories have data
-//         console.log('Grouped Data:', groupedData);
-
-//         // Iterate over each category to create an explainer
-//         categories.forEach((category, index) => {
-//             if (groupedData[category]) {
-//                 // Create the container div for each explainer
-//                 const explainer = document.createElement('div');
-//                 explainer.classList.add('explainer');
-//                 explainer.id = `sec${index + 1}`; // Unique ID for each explainer
-
-//                 // Create the category title element
-//                 const categoryTitle = document.createElement('h2');
-//                 categoryTitle.classList.add('category');
-//                 categoryTitle.id = `c${index + 1}`;
-//                 const catSpan = document.createElement('span');
-//                 catSpan.textContent = category;
-//                 categoryTitle.appendChild(catSpan);
-//                 explainer.appendChild(categoryTitle);
-
-//                 // Create up to 3 sections for each category
-//                 groupedData[category].slice(0, 3).forEach((item, sectionIndex) => {
-//                     // Create section div
-//                     const section = document.createElement('div');
-//                     section.classList.add('section');
-
-//                     // Create details for sectionTab
-//                     const details = document.createElement('details');
-//                     details.classList.add('sectionTab');
-
-//                     // Create summary for sectionTitle
-//                     const summary = document.createElement('summary');
-//                     summary.classList.add('sectionTitle');
-//                     const secSpan = document.createElement('span');
-//                     secSpan.textContent = item.section; // Set the section title
-
-//                     summary.appendChild(secSpan);
-//                     details.appendChild(summary);
-
-//                     // Create content section
-//                     const content = document.createElement('div');
-//                     content.classList.add('content');
-//                     const contentParagraph = document.createElement('p');
-//                     contentParagraph.textContent = item.content; // Add content
-
-//                     content.appendChild(contentParagraph);
-//                     details.appendChild(content);
-//                     section.appendChild(details);
-
-//                     // Append section to explainer
-//                     explainer.appendChild(section);
-//                 });
-
-//                 // Append the explainer to the content container
-//                 contentContainer.appendChild(explainer);
-//             } else {
-//                 console.log(`No data found for category: ${category}`);
-//             }
-//         });
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data:', error);
-//     });
+            return filteredData; // Return the filtered data
+        })
+        .catch(error => {
+            console.error('Error fetching or processing data:', error);
+            return []; // Return an empty array on error
+        });
+}
