@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="icon" type="image/x-icon" href="/portfolio/assets/cattap-03cfbd1b.gif">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/futura-renner" type="text/css"/>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/bbcfa445c6.js" crossorigin="anonymous"></script>
+    
+
+    <title>Explore AI</title>
+</head>
+
+<body class="dark">
+    <h1 class="mainTitle">Understanding <br> Artificial Intelligence</h1>
+    <p class="subTitle">
+        Choose what you teach and your knowledge level on AI
+    </p>
+
+    <input type="checkbox" class="light" id="light" onclick="darkntMode()" onKeyPress="">
+
+    <div class="dropdownHolder">
+        <label id="discipline_label" class="field" for="img_category_discipline" data-value="">
+            <span>What do you teach?</span>
+            <div id="img_category_discipline" class="psuedo_select" name="img_category">
+                <span class="selected"></span>
+                <ul id="img_category_options_discipline" class="options">
+                    <li class="option" data-value="General">General</li>
+                    <li class="option" data-value="Art">Art</li>
+                    <li class="option" data-value="Science">Science</li>
+                    <li class="option" data-value="Business">Business</li>
+                    <li class="option" data-value="Literature">Literature</li>
+                    <li class="option" data-value="Mathematics">Mathematics</li>
+                    <li class="option" data-value="Computer Science">Computer Science</li>
+                </ul>
+            </div>
+        </label>
+    
+        <label id="knowledge_label" class="field" for="img_category_knowledge" data-value="">
+            <span>Knowledge level</span>
+            <div id="img_category_knowledge" class="psuedo_select" name="img_category">
+                <span class="selected"></span>
+                <ul id="img_category_options_knowledge" class="options">
+                    <li class="option" data-value="None">None</li>
+                    <li class="option" data-value="Novice">Novice</li>
+                    <li class="option" data-value="Intermediate">Intermediate</li>
+                    <li class="option" data-value="Advanced">Advanced</li>
+                    <li class="option" data-value="Expert">Expert</li>
+                </ul>
+            </div>
+        </label>
+    </div>
+
+    <div class="wrapper" id="content-container">
+    </div>
+
+    <!-- <footer>Footer Placeholder Text</footer> -->
+    <script type="module" src="src/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,3677 @@
+[
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Artificial Intelligence is not as smart as we often think. Instead, it is like a large, well-organized library of information that operates based on rules and is influenced by the data it receives."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Artificial Intelligence isn’t as intelligent as we say it is; it’s essentially a vast, organized collection of knowledge, bound by rules and shaped by data."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Artificial intelligence, often abbreviated as AI, refers to the simulation of human intelligence processes by machines, especially computer systems. This involves tasks such as learning, reasoning, problem-solving, perception, and language understanding. In essence, AI aims to create machines that can perform tasks that typically require human intelligence, such as image recognition in art or the generation of creative works."
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Artificial Intelligence refers to the simulation of human intelligence processes by machines, such as learning, reasoning, and self-correction. In simpler terms, it involves creating computer systems that can perform tasks that typically require human intelligence. This can include problem-solving, recognizing speech or faces, making decisions, and more."
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "In the context of business, Artificial Intelligence (AI) refers to the use of advanced technologies to enable computers or machines to perform tasks that typically require human intelligence. This can include activities such as understanding natural language, recognizing patterns in data, making decisions, and even engaging in conversations. AI has the potential to revolutionize how businesses operate by streamlining processes, improving decision-making, and enhancing customer experiences."
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Artificial Intelligence, often referred to as AI, is a technology that enables machines and computer programs to perform tasks that typically require human intelligence. These tasks can include reasoning, learning, problem-solving, and understanding natural language. AI systems are designed to mimic human cognitive abilities and carry out complex functions with impressive accuracy and efficiency."
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": "Mathematics plays a foundational role in artificial intelligence (AI). It provides the theoretical framework for developing algorithms and models that power AI systems. Advanced mathematical concepts such as linear algebra, calculus, probability theory, optimization, and statistics are essential for designing AI algorithms, training machine learning models, and understanding the behavior of AI systems. In the realm of AI, mathematics serves as the language through which complex problems are formulated and solved, enabling the creation of intelligent systems that can learn from data, make predictions, and perform tasks that mimic human cognitive abilities."
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Explanation",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": "Artificial Intelligence is often likened to a child. It absorbs information rapidly, yet its methods of learning remain somewhat mysterious. While AI can display astonishing creativity, it sometimes makes mistakes on straightforward tasks. Similar to understanding the thoughts of others, the inner workings of AI's decision-making processes can be enigmatic. Just as we acknowledge that animals think in some capacity, the exact nature of AI's cognition continues to elude us."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": "AI is like a child. It learns quickly, but we’re not entirely sure how it’s learning; its creativity seemingly knows no bounds, but it’s often wrong with the simplest or most obvious things. You can never know what someone, or something, else is truly thinking; we know animals think, but we don’t know what."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": "Comparison is an essential aspect when delving into the realm of Artificial Intelligence. By comparing various algorithms, models, and approaches, researchers can gauge the effectiveness and efficiency of different AI systems. This process involves analyzing how different techniques perform in various scenarios and tasks. Through these comparisons, AI practitioners can determine which methods yield better results and are more suitable for specific applications within the field of Computer Science."
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Comparison",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": "Think of AI's \\\\\\\\\"brain\\\\\\\\\" as a vast and varied library, similar to the Library of Alexandria. Although users may not be aware of everything it contains, the library continuously grows and improves with new information and links."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": "Imagine AI’s “brain” as something like the Library of Alexandria—massive and diverse, yet users don’t fully know its contents. It's always evolving and updating through new data and connections."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": "Artificial Intelligence is like a blank canvas waiting to be transformed by the artist's vision and skill. Just as an artist uses various techniques and tools to create a masterpiece, AI systems utilize algorithms and data to produce insightful and innovative solutions. In this way, AI can be seen as a form of artistic expression, where the programmer acts as the creator bringing intelligence to life on a digital canvas."
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "What AI Actually Is",
+    "section": "Analogy",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": "In the world of Artificial Intelligence (AI), the process of analyzing data, patterns, and relationships to provide a response or result is comparable to how our brains turn sensory information into thoughts."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": "Just as our minds convert sensory input into thoughts, AI processes data, patterns, and connections to generate an output."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": "Similar to how the human mind translates sensory information into thoughts, Artificial Intelligence (AI) analyzes data, patterns, and relationships to produce a response or output."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Input → Output",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": "AI learns in a way that is similar to how humans learn, but it does not have self-awareness or deep understanding like we do. It uses a method called reinforcement learning, which involves trial and error to improve its performance over time."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": "AI’s “thinking” process resembles our own, but with its own form of trial and error via methods like reinforcement learning. However, it’s fundamentally different because it lacks self-awareness or understanding."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Human-like Learning",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": "We use techniques like reinforcement learning to help AI adjust. It responds based on positive or negative feedback—similar to how we reinforce our own habits and beliefs. Over time, this feedback-driven process allows AI to fine-tune its behavior to reach desired outcomes, though it can also introduce biases if the feedback or data contains unbalanced perspectives."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Works",
+    "section": "Learning and Biases",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": "AI detectors use stored information to analyze and determine if a piece of data came from a human or an artificial intelligence source."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": "AI detectors compare outputs to known or indexed data to assess likelihood of “human” or “AI” origin."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Inside Mechanics",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": "Detectors often struggle with rephrased or commonly stated concepts, frequently flagging responses as AI-generated if they match widely recognized phrases or templates."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Limitations and Flaws",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": "If you’re already uncertain and turn to a detection tool, you've likely unknowingly brought a bias that the content is AI-generated."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "How AI Detectors Work",
+    "section": "Confirmation Bias",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": "For many, AI tools are productivity boosters, sparking creativity and offering support rather than replacing jobs. AI functions as an assistant, not a substitute, especially since it lacks the critical thinking and nuanced judgment unique to humans."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Replacing You",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": "AI isn’t just a shortcut or a “cheat”—in real-world settings, it’s a powerful aid in tasks like analysis, coding, communication, and data processing, enhancing human abilities rather than undermining them."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Applications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": "A widespread misconception is that AI is equivalent to AGI (Artificial General Intelligence) or ASI (Artificial Superintelligence). While AGI would theoretically match human-level reasoning across various tasks and ASI would surpass it and us, current AI remains narrow and specialized."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "Effects of Using AI",
+    "section": "Misconceptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": "AI detectors can mistakenly flag individuals as using AI-generated content, stifling creativity and undermining legitimate efforts."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Accuracy Concerns",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": "AI detectors can mistakenly flag individuals as using AI-generated content, stifling creativity and undermining legitimate efforts."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Wrongful Assumptions",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": "Do AI detectors limit innovation, enforce gatekeeping, or create unnecessary barriers? Explore how these questions shape our views on intellectual honesty and creative freedom."
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "General",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Art",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Business",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Literature",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Mathematics",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "None",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Novice",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Intermediate",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Advanced",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  },
+  {
+    "discipline": "Computer Science",
+    "knowledge": "Expert",
+    "category": "AI Detector Issues",
+    "section": "Ethical Implications",
+    "content": ""
+  }
+]
