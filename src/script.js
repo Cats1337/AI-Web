@@ -1,4 +1,4 @@
-import OpenAI from "openai";
+// import OpenAI from "openai"; 
 
 window.onload = function () {
     const checkbox = document.getElementById("light");
